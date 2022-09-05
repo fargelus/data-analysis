@@ -2,7 +2,6 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog as fd
 
-
 class MainWindow:
     def __init__(self):
         self.root = tk.Tk()
@@ -32,6 +31,5 @@ class MainWindow:
 
     def draw(self):
         self.root.mainloop()
-
 
 MainWindow().draw()
