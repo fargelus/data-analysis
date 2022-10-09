@@ -20,3 +20,19 @@ vec1 = np.concatenate((vec[0:4], np.array([1]), vec[5:]))
 
 # 7. Create a vector with values ranging from 10 to 49 (★☆☆)
 np.arange(10, 50)
+
+#### 8. Reverse a vector (first element becomes last) (★☆☆)
+reversed = np.flip(np.arange(5))
+print("REVERSED:", reversed)
+
+#### 9. Create a 3x3 matrix with values ranging from 0 to 8 (★☆☆)
+matrix = np.arange(9)
+matrix.shape = (3, 3)
+print(matrix)
+
+#### 10. Find indices of non-zero elements from [1,2,0,0,4,0] (★☆☆)
+arr = np.array([1, 2, 0, 0, 4, 0])
+print("NONZERO:", np.flatnonzero(arr))
+
+#### 11. Create a 3x3 identity matrix (★☆☆)
+print(np.identity(3))
