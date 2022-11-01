@@ -63,3 +63,17 @@ for i in range(1, 3):
         arr[i][j] = 0
 
 print("MODIFIED:\n", arr)
+
+#### 16. How to add a border (filled with 0's) around an existing array? (★☆☆)
+a = np.array([[1, 2, 3], [2, 3, 4], [3, 5, 6]])
+print(a * [np.zeros(3, dtype=int), [0, 1, 0], np.zeros(3, dtype=int)])
+
+#### 17. What is the result of the following expression? (★☆☆)
+```python
+0 * np.nan # nan
+np.nan == np.nan # False
+np.inf > np.nan # False
+np.nan - np.nan # nan
+np.nan in set([np.nan]) # True
+0.3 == 3 * 0.1 # False
+```
