@@ -36,3 +36,30 @@ print("NONZERO:", np.flatnonzero(arr))
 
 #### 11. Create a 3x3 identity matrix (★☆☆)
 print(np.identity(3))
+
+#### 12. Create a 3x3x3 array with random values (★☆☆)
+rng = np.random.default_rng()
+print(rng.integers(0, 10, size=(3, 3, 3)))
+
+#### 13. Create a 10x10 array with random values and find the minimum and maximum values (★☆☆)
+arr = rng.random(size=(10, 10))
+print(arr)
+print(arr.max())
+print(arr.min())
+
+#### 14. Create a random vector of size 30 and find the mean value (★☆☆)
+print(rng.integers(100, size=(30)).mean())
+
+#### 15. Create a 2d array with 1 on the border and 0 inside (★☆☆)
+arr = rng.integers(100, size=(4, 4))
+print("ORIG:\n", arr)
+
+arr[0] = 1
+arr[3] = 1
+arr.T[0] = 1
+arr.T[3] = 1
+for i in range(1, 3):
+    for j in range(1, 3):
+        arr[i][j] = 0
+
+print("MODIFIED:\n", arr)
